@@ -44,6 +44,11 @@ h2 {
     background-color: lightgoldenrodyellow;
 }
 
+.flex-item-contact img {
+    height: 50px;
+    margin-right: 25px;
+}
+
 .flex-item-education {
     background-color: darkseagreen;
 }
