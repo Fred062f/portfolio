@@ -1,10 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-image: linear-gradient(to bottom right, midnightblue, darkblue);
+    background-image: linear-gradient(to bottom right, darkblue, midnightblue);
     background-repeat: no-repeat;
     padding: 15px;
 }
 
-header {
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "JetBrains Mono ExtraBold";
+    font-weight: bolder;
+    padding: 10px;
+}
+
+nav a br {
+    display: none;
+}
+
+nav a:hover {
+    color: darkblue;
+    background-color: white;
+}
+
+.heading-container {
     display: flex;
     padding: 25px;
     justify-content: space-around;
@@ -63,38 +92,43 @@ h3 {
     text-transform: uppercase;
 }
 
-ul{
+p {
+    color: darkblue;
+    font-size: 18px;
+}
+
+.main-container ul{
     list-style-type: none;
     margin: 0;
     color: darkblue;
     padding: 0;
 }
 
-ul li {
+.main-container ul li {
     font-size: 20px;
     margin-bottom: 35px;
 }
 
-main {
+.main-container {
     display: flex;
     justify-content: space-evenly;
-
 }
 
 @media (max-width: 800px) {
-    main {
+    .main-container {
         flex-direction: column;
     }
     .flex-item {
         margin: 25px;
-        padding-left: 15px;
+        padding-left: 25px;
         height: fit-content;
     }
-    header {
+    .heading-container {
         flex-direction: column;
     }
     h1 {
         font-size: 85px;
+        text-align: center;
     }
     h2 {
         font-size: 50px;
@@ -102,8 +136,14 @@ main {
     h3 {
         text-align: center;
     }
-    #name {
-        transform: rotate(-90deg);
+    nav {
+        margin-bottom: -75px;
+    }
+    nav a {
+        font-size: 15px;
+    }
+    nav a br {
+        display: block;
     }
 }
 
